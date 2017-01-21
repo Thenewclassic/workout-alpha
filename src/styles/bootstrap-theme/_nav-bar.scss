@@ -1,0 +1,47 @@
+.navbar {
+    background: $color-body-bg;
+    border-color: $color-border-1;
+}
+
+.navbar-default {
+
+}
+
+.navbar-fixed-top {
+    min-height: 44px;
+    height: 44px;
+
+    .navbar-header {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        float: none;
+        display: inline-block;
+    }
+}
+
+.navbar-fixed-bottom {
+    .button-nav {
+        display: flex;
+        justify-content: space-around;
+        .nav-button {
+            width: 50px;
+            padding: 7px 0 0 0;
+            .nav-button-icon {
+                font-size: 16px;
+                display: block;
+            }
+
+            .nav-button-title {
+                margin: 6px 0 0 0;
+                font-size: 12px;
+                display: block;
+            }
+
+            &.active {
+                color: $color-theme-primary;
+            }
+        }
+    }
+}

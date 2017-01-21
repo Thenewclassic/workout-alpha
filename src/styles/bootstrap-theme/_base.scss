@@ -1,0 +1,15 @@
+$color-white: #ffffff;
+$color-body-bg: $color-white;
+$color-border-1: $color-gray-4;
+$color-theme-primary: $color-ios-red;
+
+// this file sets element overrides for the theme
+body {
+    padding-top: 70px;
+    font-family: $font-primary;
+    background-color: $color-white;
+}
+
+.content-container {
+    width: 100%;
+}
