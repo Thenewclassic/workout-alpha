@@ -1,0 +1,13 @@
+.panel {
+    &.panel-default {
+        border-radius: 0;
+        box-shadow: none;
+        border: 0;
+        border-bottom: 1px solid $color-border-1;
+        margin: 0 -15px;
+
+        .panel-heading {
+            background-color: #fff;
+        }
+    }
+}
