@@ -1,0 +1,39 @@
+.week-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ced4da;
+
+    .activity-day {
+        width: 30px;
+        text-align: center;
+    }
+}
+
+.activities {
+    .activity-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-end;
+        min-height: 30px;
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .activity {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .workout {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #ced4da;
+        flex: 0 0 auto;
+        margin: 5px 0;
+    }
+}
