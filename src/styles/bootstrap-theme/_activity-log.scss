@@ -25,15 +25,22 @@
     .activity {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-around;
     }
 
     .workout {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background: #ced4da;
         flex: 0 0 auto;
         margin: 5px 0;
+        text-align: center;
+        padding-top: 5px;
+        &.gym {
+            background: $color-theme-primary;
+        }
+
+        &.run {
+            background: $color-ios-orange;
+        }
     }
 }
