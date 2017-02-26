@@ -1,18 +1,20 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
+import WorkoutListItem from './WorkoutListItem';
 
-const WorkoutList = () => {
+const WorkoutList = ({workouts}) => {
+    let getWorkoutNodes = () => {
+        return workouts.map((workout, idx) => { return <WorkoutListItem key={idx} workout={workout} />; });
+    };
     return (
-        <div className="panel panel-default">
-            <div className="panel-heading">
-                <h3 className="panel-title">
-                    Yesterday
-                </h3>
-            </div>
-            <div className="panel-body">
-                Ab Blaster Workout
-            </div>
+        <div>
+            {getWorkoutNodes()}
         </div>
+
     );
+};
+
+WorkoutList.propTypes = {
+    workouts: PropTypes.array.isRequired
 };
 
 export default WorkoutList;

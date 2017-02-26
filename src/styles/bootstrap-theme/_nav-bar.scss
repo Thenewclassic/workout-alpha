@@ -28,6 +28,9 @@
         .nav-button {
             width: 50px;
             padding: 7px 0 0 0;
+            display: block;
+            text-align: center;
+            color: $color-gray-9;
             .nav-button-icon {
                 font-size: 16px;
                 display: block;

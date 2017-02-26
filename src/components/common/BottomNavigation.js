@@ -11,22 +11,18 @@ class BottomNavigation extends React.Component {
                           <span className="nav-button-icon glyphicon glyphicon-th-list"></span>
                           <span className="nav-button-title">Feed</span>
                       </IndexLink>
-                      <Link to="/explore" activeClassName="active" className="nav-button">
-                          <span className="nav-button-icon glyphicon glyphicon-search"></span>
-                          <span className="nav-button-title">Explore</span>
+                      <Link to="/schedule" activeClassName="active" className="nav-button">
+                          <span className="nav-button-icon glyphicon glyphicon-calendar"></span>
+                          <span className="nav-button-title">Schedule</span>
                       </Link>
-                      <button className="nav-button">
-                          <span className="nav-button-icon glyphicon glyphicon-play"></span>
-                          <span className="nav-button-title">Start</span>
-                      </button>
-                      <button className="nav-button">
+                      <Link to="/workouts" activeClassName="active" className="nav-button">
+                          <span className="nav-button-icon glyphicon glyphicon-sunglasses"></span>
+                          <span className="nav-button-title">Workouts</span>
+                      </Link>
+                      <Link to="/profile" activeClassName="active" className="nav-button">
                           <span className="nav-button-icon glyphicon glyphicon-user"></span>
                           <span className="nav-button-title">Profile</span>
-                      </button>
-                      <button className="nav-button">
-                          <span className="nav-button-icon glyphicon glyphicon-option-horizontal"></span>
-                          <span className="nav-button-title">More</span>
-                      </button>
+                      </Link>
                   </div>
               </div>
             </nav>
