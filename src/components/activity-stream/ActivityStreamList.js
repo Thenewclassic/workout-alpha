@@ -1,36 +1,24 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import ActivityStreamItem from './ActivityStreamItem';
 
-class ActivityStreamList extends React.Component {
-    constructor(){
-        super();
-        this.state = {
-            activities: [
-                {
-                    name: 'workout'
-                },
-                {
-                    name: 'run'
-                },
-                {
-                    name: 'rest'
-                }
-            ]
-        };
-    }
+const ActivityStreamList = ({activities}) => {
 
-    _getActivities() {
-        return this.state.activities.map((activity, idx) => {return <ActivityStreamItem activity={activity} key={idx} />;});
-    }
 
-    render() {
+    let getActivities = () => {
+        return activities.map((activity, idx) => {return <ActivityStreamItem activity={activity} key={idx} />;});
+    };
 
-        return (
-            <ul className="stream-list activity-stream">
-                {this._getActivities()}
-            </ul>
-        );
-    }
-}
+
+    return (
+        <ul className="stream-list activity-stream">
+            {getActivities()}
+        </ul>
+    );
+
+};
+
+ActivityStreamList.propTypes = {
+    activities: PropTypes.array.isRequired
+};
 
 export default ActivityStreamList;
