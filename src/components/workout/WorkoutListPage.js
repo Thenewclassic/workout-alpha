@@ -21,7 +21,7 @@ class WorkoutListPage extends React.Component {
     render() {
         return (
             <div>
-                <h1>Workouts</h1>
+                <h1>My Workouts</h1>
                 <WorkoutList workouts={this.state.workouts} />
             </div>
         );
