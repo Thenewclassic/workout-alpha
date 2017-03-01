@@ -1,0 +1,39 @@
+.tabbed-nav {
+    background: $color-gray-1;
+    position: fixed;
+    top: 44px;
+    width: 100%;
+    display: flex;
+    left: 0;
+
+    .tabbed-nav-item {
+        flex: 1;
+        text-align: center;
+        padding: 10px 15px;
+        position: relative;
+        color: $color-gray-5;
+        font-family: $font-primary;
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid $color-border-1;
+
+        &.active {
+            color: $color-gray-8;
+        }
+
+        &:not(:last-child) {
+            &:after {
+                content: ' ';
+                width: 1px;
+                background: $color-gray-5;
+                height: 25px;
+                position: absolute;
+                right: 0;
+                top: 9px;
+            }
+        }
+
+    }
+}

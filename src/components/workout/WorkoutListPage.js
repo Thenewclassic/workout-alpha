@@ -12,6 +12,10 @@ class WorkoutListPage extends React.Component {
         const {workouts} = this.props;
         return (
             <div>
+                <nav className="tabbed-nav">
+                    <a className="tabbed-nav-item" href="#">Workouts</a>
+                    <a className="tabbed-nav-item" href="#">Exercises</a>
+                </nav>
                 <h1>My Workouts</h1>
                 <WorkoutList workouts={workouts} />
             </div>
