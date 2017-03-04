@@ -20,7 +20,7 @@ const workouts = [
 
 //This would be performed on the server in a real app. Just stubbing in.
 const generateId = (workout) => {
-    return workout.name.replace(' ', '') + Date.now();
+    return workout.name.replace(' ', '').toLowercase() + Date.now();
 };
 
 class WorkoutApi {
