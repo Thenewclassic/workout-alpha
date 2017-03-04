@@ -1,14 +1,17 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router';
 
 class WorkoutPage extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
     }
     render() {
-        console.log(this.props);
         return (
             <div>
+                <nav className="tabbed-nav">
+                    <Link to="/workouts" activeClassName="active" className="tabbed-nav-item" href="#">Workouts</Link>
+                    <Link to="/exercises" activeClassName="active" className="tabbed-nav-item" href="#">Exercises</Link>
+                </nav>
                 {this.props.children}
             </div>
         );
